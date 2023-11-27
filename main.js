@@ -19,5 +19,8 @@ document.addEventListener('DOMContentLoaded', function(){
         followersElement.innerText = json.followers;
         followingElement.innerText = json.following;
         linkElement.href = json.html_url;
-    })   
+    })
+    .catch(function(error){
+        alert("ocorreu um erro ao carregar as informações, tente novamente mais tarde.")
+    })
 })
